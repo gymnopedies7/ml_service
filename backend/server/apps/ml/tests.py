@@ -1,4 +1,5 @@
 from django.test import TestCase
+
 import inspect
 
 from apps.ml.income_classifier.random_forest import RandomForestClassifier
@@ -47,3 +48,4 @@ class MLTests(TestCase):
     
         # there should be one endpoint available
         self.assertEqual(len(registry.endpoints),1)
+
