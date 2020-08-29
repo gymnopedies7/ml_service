@@ -26,7 +26,7 @@ try:
     #random forest classsifier
     rf = RandomForestClassifier()
     # add to ML registry
-    registry.add_algorithm(endpoint_name = "inccome_classifier",algorithm_object=rf, algorithm_name="random forest", 
+    registry.add_algorithm(endpoint_name = "income_classifier",algorithm_object=rf, algorithm_name="random forest", 
     algorithm_status="production",algorithm_version="0.0.1", owner="MINSU HWANG", 
     algorithm_description="Random Forest with simple pre and post processing",
     algorithm_code=inspect.getsource(RandomForestClassifier))
